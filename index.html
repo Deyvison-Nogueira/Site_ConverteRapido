@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConverteRápido</title>
+    <!-- É esta linha que carrega as tuas cores: -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecalho-principal">
+        <div class="logo">
+            <span class="icone-logo">◆</span> CONVERTE<strong>RÁPIDO</strong>
+        </div>
+    </header>
+
+    <main class="conteudo-principal">
+        <section class="introducao">
+            <h2>Conversão rápida</h2>
+            <p>Acesse nossos conversores mais populares abaixo para converter rapidamente taxas de moeda, comprimento e temperatura.</p>
+        </section>
+
+        <!-- Grade de Cartões -->
+        <section class="grid-cards">
+            
+            <!-- Cartão 1: Moeda -->
+            <article class="card">
+                <header class="card-header">
+                    <h3>Moeda ⚙</h3>
+                </header>
+                <div class="input-group">
+                    <label for="moeda-valor">Converter</label>
+                    <input type="number" id="moeda-valor" placeholder="Ex: 1" step="0.01">
+                </div>
+                <div class="input-group">
+                    <label for="moeda-de">De</label>
+                    <select id="moeda-de">
+                        <option value="EUR">Euro (EUR)</option>
+                        <option value="USD">Dólar Americano (USD)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="moeda-para">Para</label>
+                    <select id="moeda-para">
+                        <option value="USD">Dólar Americano (USD)</option>
+                        <option value="BRL">Real Brasileiro (BRL)</option>
+                    </select>
+                </div>
+                <button id="btn-moeda" class="btn-converter">Converter</button>
+                <div class="resultado" id="res-moeda">0,00 $</div>
+            </article>
+
+            <!-- Cartão 2: Comprimento -->
+            <article class="card">
+                <header class="card-header">
+                    <h3>Comprimento ⚙</h3>
+                </header>
+                <div class="input-group">
+                    <label for="comp-valor">Converter</label>
+                    <input type="number" id="comp-valor" placeholder="Ex: 1">
+                </div>
+                <div class="input-group">
+                    <label for="comp-de">De</label>
+                    <select id="comp-de">
+                        <option value="mi">Milha (mi)</option>
+                        <option value="km">Quilômetro (km)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="comp-para">Para</label>
+                    <select id="comp-para">
+                        <option value="km">Quilômetro (km)</option>
+                        <option value="mi">Milha (mi)</option>
+                    </select>
+                </div>
+                <button id="btn-comp" class="btn-converter">Converter</button>
+                <div class="resultado" id="res-comp">0,00 km</div>
+            </article>
+
+            <!-- Cartão 3: Volume -->
+            <article class="card">
+                <header class="card-header">
+                    <h3>Volume ⚙</h3>
+                </header>
+                <div class="input-group">
+                    <label for="vol-valor">Converter</label>
+                    <input type="number" id="vol-valor" placeholder="Ex: 1">
+                </div>
+                <div class="input-group">
+                    <label for="vol-de">De</label>
+                    <select id="vol-de">
+                        <option value="gal">Galão (gal)</option>
+                        <option value="l">Litro (l)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="vol-para">Para</label>
+                    <select id="vol-para">
+                        <option value="l">Litro (l)</option>
+                        <option value="gal">Galão (gal)</option>
+                    </select>
+                </div>
+                <button id="btn-vol" class="btn-converter">Converter</button>
+                <div class="resultado" id="res-vol">0,00 l</div>
+            </article>
+
+            <!-- Cartão 4: Massa -->
+            <article class="card">
+                <header class="card-header">
+                    <h3>Massa ⚙</h3>
+                </header>
+                <div class="input-group">
+                    <label for="massa-valor">Converter</label>
+                    <input type="number" id="massa-valor" placeholder="Ex: 1">
+                </div>
+                <div class="input-group">
+                    <label for="massa-de">De</label>
+                    <select id="massa-de">
+                        <option value="lb">Libra (lb)</option>
+                        <option value="kg">Quilograma (kg)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="massa-para">Para</label>
+                    <select id="massa-para">
+                        <option value="kg">Quilograma (kg)</option>
+                        <option value="lb">Libra (lb)</option>
+                    </select>
+                </div>
+                <button id="btn-massa" class="btn-converter">Converter</button>
+                <div class="resultado" id="res-massa">0,00 kg</div>
+            </article>
+
+            <!-- Cartão 5: Área -->
+            <article class="card">
+                <header class="card-header">
+                    <h3>Área ⚙</h3>
+                </header>
+                <div class="input-group">
+                    <label for="area-valor">Converter</label>
+                    <input type="number" id="area-valor" placeholder="Ex: 1">
+                </div>
+                <div class="input-group">
+                    <label for="area-de">De</label>
+                    <select id="area-de">
+                        <option value="yd2">Terreno quadrado (yd²)</option>
+                        <option value="m2">Metro quadrado (m²)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="area-para">Para</label>
+                    <select id="area-para">
+                        <option value="m2">Metro quadrado (m²)</option>
+                        <option value="yd2">Terreno quadrado (yd²)</option>
+                    </select>
+                </div>
+                <button id="btn-area" class="btn-converter">Converter</button>
+                <div class="resultado" id="res-area">0,00 m²</div>
+            </article>
+
+            <!-- Cartão 6: Velocidade -->
+            <article class="card">
+                <header class="card-header">
+                    <h3>Velocidade ⚙</h3>
+                </header>
+                <div class="input-group">
+                    <label for="vel-valor">Converter</label>
+                    <input type="number" id="vel-valor" placeholder="Ex: 1">
+                </div>
+                <div class="input-group">
+                    <label for="vel-de">De</label>
+                    <select id="vel-de">
+                        <option value="mph">Milha por hora (mph)</option>
+                        <option value="kmh">km/h</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="vel-para">Para</label>
+                    <select id="vel-para">
+                        <option value="kmh">km/h</option>
+                        <option value="mph">Milha por hora (mph)</option>
+                    </select>
+                </div>
+                <button id="btn-vel" class="btn-converter">Converter</button>
+                <div class="resultado" id="res-vel">0,00 km/h</div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- É esta linha que faz os botões funcionarem: -->
+    <script src="main.js"></script>
+</body>
+</html>
